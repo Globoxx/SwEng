@@ -16,7 +16,7 @@ public class GreetingActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String name = extras.getString(MainActivity.BUNDLE_EXTRA_NAME, "???");
-            String greetingMessage = "Hello " + name + " !";
+            String greetingMessage = "Hello " + name + "!";
             nameText.setText(greetingMessage);
         }
     }
