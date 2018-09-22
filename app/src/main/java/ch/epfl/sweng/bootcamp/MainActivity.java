@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         nameEdit.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
+                // No use for the moment
             }
 
             @Override
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-
+                // No use for the moment
             }
         });
 
