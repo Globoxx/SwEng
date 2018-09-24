@@ -1,8 +1,8 @@
 package ch.epfl.sweng.bootcamp;
 
 import android.os.Bundle;
-import android.widget.TextView;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.TextView;
 
 public class GreetingActivity extends AppCompatActivity {
 

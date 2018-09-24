@@ -29,25 +29,25 @@ public class MainActivity extends AppCompatActivity {
 
         nameEdit.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            public void beforeTextChanged(CharSequence sequence, int start, int count, int after) {
                 // No use for the moment
             }
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                name = s.toString();
+            public void onTextChanged(CharSequence sequence, int start, int before, int count) {
+                name = sequence.toString();
                 button.setEnabled(count > 0);
             }
 
             @Override
-            public void afterTextChanged(Editable s) {
+            public void afterTextChanged(Editable sequence) {
                 // No use for the moment
             }
         });
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 Intent greetingActivity = new Intent(MainActivity.this, GreetingActivity.class);
                 greetingActivity.putExtra(BUNDLE_EXTRA_NAME, name);
                 startActivity(greetingActivity);
